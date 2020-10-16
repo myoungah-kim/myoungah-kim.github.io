@@ -3099,7 +3099,8 @@ input, select, textarea {
 	}
 	#mainav .drop{padding-left:15px;}
 	#mainav ul li:active a, #mainav ul li.active a {
-		font-weight: 500;
+		font-weight: 900;
+		color: #47D3E5;
 	}
 
 	
@@ -8758,12 +8759,43 @@ input, select, textarea {
 	.page_research .major {
 		font-size: 1.25rem !important;
 	}
-
+	.page_research #overview ul {
+		list-style: none;
+		text-align: center;
+	}
+	.page_research #overview ul li {
+		list-style: none;
+	}
 	.page_research #overview ul li a {
+		display: inline-block;
 		text-decoration: none;
 	}
+	.page_research #overview ul li a.box,
+		.page_research #overview ul li a.box.primary {
+			background-color: rgba(0, 0, 0, 0.05);
+			box-shadow: none;
+			color: inherit;
+			margin-bottom: 1rem;
+			padding: 0.6rem 2rem;
+			transition: color 0.1s ease-in-out;
+		}
+
+		.page_research #overview ul li a.box:hover,
+		.page_research #overview ul li a.box.primary:hover {
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		.page_research #overview ul li a.box:active,
+		.page_research #overview ul li a.box.primary:active {
+			background-color: #1ebdd1;
+			color: #ffffff;
+		}
+
 	.page_research #overview ul li a .bold {
+		display: block;
 		font-weight: 900;
+		font-size: 1.1em;
 	}
 	.page_research .image.left, .page_research .image.right {
 			width: 100%;
