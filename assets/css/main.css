@@ -3068,20 +3068,61 @@ input, select, textarea {
 		vertical-align: middle;
 	}
 
+		@media screen and (max-width: 736px) {
+			#header {
+				padding: 10px 10px;
+			}
+		}
+
+	#logo {}
+
+		@media screen and (max-width: 736px) {
+
+			#logo {
+				float: none !important;
+				text-align: center;
+			}
+		}
+
 	#logo h3 {
 		margin: 0;
 	}
+
 	#logo a {
 		display:inline-block;
 		line-height: 2;
 		padding:0;
 	}
 
-	nav ul, nav ol{margin:0; padding:0; list-style:none;}
+	nav ul, nav ol{
+		display: inline-block;
+		margin:0; 
+		padding:0; 
+		list-style:none;}
 
-	#mainav, nav {line-height:normal;}
-	#mainav {}
+	#mainav, nav {
+		line-height:normal;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#mainnav, nav {
+				float: none !important;
+				text-align: center;
+			}
+
+		}
+
 	#mainav ul {}
+
+		@media screen and (max-width: 736px) {
+
+			#mainav ul {
+				width: 310px;
+			}
+
+		}
+
 	#mainav li {
 		display:inline-block; 
 		position:relative; 
@@ -3109,6 +3150,8 @@ input, select, textarea {
 	#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
 	#mainav form select{width:100%; padding:5px; border:1px solid;}
 	#mainav form select option{margin:5px; padding:0; border:none;}
+
+		
 
 /* Banner (transitions) */
 
@@ -8726,6 +8769,30 @@ input, select, textarea {
 		background-color:#786962;
 	}
 
+/* Hero image */
+
+	.hero-image {
+		height: 50%;
+		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;
+	}
+
+/* cf */
+
+	.cf {
+		display: block;
+		font-size: 0.9em;
+		margin: 0.5rem 0 0 0;
+	}
+
+/* figcaption */
+	figcaption {
+		margin: 4em 0 2em 0;
+		font-weight: 300;
+	}
+
 /*** Page: Index ***/
 
 	.tagcontainer {
@@ -8739,6 +8806,14 @@ input, select, textarea {
 		text-align: center;
 		padding: 10%;
 	}
+
+		@media screen and (max-width: 480px) {
+
+			#tagcloud {
+				padding: 5%;
+			}
+
+		}
 
     #tagcloud a {
         text-decoration: none;
@@ -8851,6 +8926,48 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 
+	}
+
+/*** Page: Research commons ***/
+
+.info {}
+
+.info .content {
+	font-weight: 300;
+}
+
+.info .content .infolist {
+	font-size: 0.9em;
+}
+.info .content .infolist b {
+	font-weight: 500;
+}
+.info .content .infolist ul {
+	margin: 0;
+}
+.category {
+	display: block;
+	margin: 1rem 0;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*** Page: Research_BeyondBTV ***/
+
+	.page_research_beyondBTV {}
+
+	.page_research_beyondBTV .hero-image {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../../images/project_thumbs/skbroadband.png");
+	}
+
+/*** Page: Research_SSVD ***/
+
+	.page_research_ssvd {}
+
+	.page_research_ssvd .hero-image {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../../images/project_thumbs/samsung.png");
+		background-position: top;
 	}
 
 /*** Page: Personal ***/
