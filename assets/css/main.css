@@ -8874,7 +8874,7 @@ input, select, textarea {
 	}
 	.page_research .image.left, .page_research .image.right {
 			width: 100%;
-			max-width: 25rem;
+			max-width: 20rem;
 		}
 
 	.page_research .projectlist {}
@@ -8930,28 +8930,28 @@ input, select, textarea {
 
 /*** Page: Research commons ***/
 
-.info {}
+	.info {}
 
-.info .content {
-	font-weight: 300;
-}
+	.info .content {
+		font-weight: 300;
+	}
 
-.info .content .infolist {
-	font-size: 0.9em;
-}
-.info .content .infolist b {
-	font-weight: 500;
-}
-.info .content .infolist ul {
-	margin: 0;
-}
-.category {
-	display: block;
-	margin: 1rem 0;
-	font-size: 1em;
-	text-transform: uppercase;
-	color: rgba(0, 0, 0, 0.3);
-}
+	.info .content .infolist {
+		font-size: 0.9em;
+	}
+	.info .content .infolist b {
+		font-weight: 500;
+	}
+	.info .content .infolist ul {
+		margin: 0;
+	}
+	.category {
+		display: block;
+		margin: 1rem 0;
+		font-size: 1em;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, 0.3);
+	}
 
 /*** Page: Research_BeyondBTV ***/
 
